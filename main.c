@@ -16,6 +16,7 @@
 //#define MYUBRR FOSC/16/BAUD-1
 #define MYUBRR (((((FOSC * 10) / (16L * BAUD)) + 5) / 10) - 1)
 
+
 void usart_init( unsigned int ubrr);
 char usart_getchar(void);
 void usart_putchar(char data);
