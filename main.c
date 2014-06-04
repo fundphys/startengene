@@ -123,7 +123,7 @@ int main(void)
     {
     	printf("%4d ", adc_read());
     	//_delay_ms(1);
-    	if (i >= 40)
+    	if (i >= 30)
     	{
     		i = 0;
     		printf("\n");

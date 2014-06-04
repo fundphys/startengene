@@ -355,12 +355,12 @@ unsigned int adc_read(void)
  194:	83 83       	std	Z+3, r24	; 0x03
  196:	0f d0       	rcall	.+30     	; 0x1b6 <printf>
     	//_delay_ms(1);
-    	if (i >= 40)
+    	if (i >= 30)
  198:	0f 90       	pop	r0
  19a:	0f 90       	pop	r0
  19c:	0f 90       	pop	r0
  19e:	0f 90       	pop	r0
- 1a0:	c8 32       	cpi	r28, 0x28	; 40
+ 1a0:	ce 31       	cpi	r28, 0x1E	; 30
  1a2:	d1 05       	cpc	r29, r1
  1a4:	14 f4       	brge	.+4      	; 0x1aa <main+0x72>
  1a6:	21 96       	adiw	r28, 0x01	; 1
