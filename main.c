@@ -118,17 +118,13 @@ int main(void)
 {
 	usart_init(MYUBRR);
 	adc_init();
+
 	stdout = &mystdout;
-	int i=0;
+
     while(1)
     {
-    	printf("%4d ", 1000);
-    	//_delay_ms(1);
-    	if (i >= 30)
-    	{
-    		i = 0;
-    		printf("\n");
-    	}
-    	i++;
+    	printf("%4d\n", adc_read());
+    	_delay_ms(1000);
+
 	}
 }
